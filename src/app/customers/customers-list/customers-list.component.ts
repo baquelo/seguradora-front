@@ -15,4 +15,8 @@ export class CustomersListComponent implements OnInit {
   ngOnInit(): void {
     this.customers = this.customersService.getCustomers();
   }
+
+  deleteCustomer(id: number) {
+    console.log(id)
+  }
 }

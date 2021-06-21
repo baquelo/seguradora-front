@@ -6,6 +6,10 @@
   font-size: 40px;
 }
 
+.find {
+  display: flex;
+}
+
 .item {
   display: flex;
   flex-direction: column;

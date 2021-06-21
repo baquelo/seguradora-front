@@ -1,15 +1,3 @@
-.page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  flex-direction: column;
-}
-
-.logo {
-  padding: 30px;
-}
-
 .menu {
   min-width: 50%;
   display: flex;

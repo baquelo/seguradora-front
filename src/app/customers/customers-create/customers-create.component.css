@@ -1,0 +1,42 @@
+.button-menu:hover {
+  background-color: #ccc;
+}
+
+.button-menu .material-icons {
+  font-size: 40px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+}
+
+.item label {
+  padding: 4px 0;
+  color: #078c03;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.item input {
+  height: 51px;
+  background: #eeffee;
+  border: solid #078c03 0.1px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding-left: 10px;
+  font-size: 24px;
+  color: #078c03;
+}
+
+
+.item input:focus {
+  border: 0;
+  box-shadow: 0;
+  border-radius: 10px;
+}

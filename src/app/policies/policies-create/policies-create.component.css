@@ -6,6 +6,10 @@
   font-size: 40px;
 }
 
+#btn-create {
+  margin-left: 20px;
+}
+
 .item {
   display: flex;
   flex-direction: column;
@@ -30,8 +34,8 @@
   box-sizing: border-box;
   border-radius: 10px;
   padding-left: 10px;
-  font-size: 32px;
-  font-weight: bold;
+  font-size: 24px;
+  color: #078c03;
 }
 
 

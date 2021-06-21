@@ -1,0 +1,7 @@
+.button-menu:hover {
+  background-color: #ccc;
+}
+
+.button-menu .material-icons {
+    font-size: 40px;
+}

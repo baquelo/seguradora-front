@@ -5,11 +5,11 @@
 
   <div class="card">
     <div class="header">
-      Clientes
+      Apólices
       <button
         id="btn-create"
         class="button primary"
-        routerLink="/customers/create"
+        routerLink="/policies/create"
       >
         <span class="material-icons"> add </span>
         Cadastrar
@@ -19,19 +19,21 @@
       <div class="table">
         <table>
           <tr>
-            <th>Nome Completo</th>
-            <th>CPF</th>
-            <th>Cidade</th>
-            <th>UF</th>
+            <th>Número</th>
+            <th>Placa</th>
+            <th>Início de Vigência</th>
+            <th>Fim de Vigência</th>
+            <th>Valor</th>
             <th>Ações</th>
           </tr>
-          <tr *ngFor="let customer of customers">
-            <td>{{ customer.fullName }}</td>
-            <td>{{ customer.cpf }}</td>
-            <td>{{ customer.city }}</td>
-            <td>{{ customer.uf }}</td>
+          <tr *ngFor="let policy of policies">
+            <td>{{ policy.number }}</td>
+            <td>{{ policy.licensePlate }}</td>
+            <td>{{ policy.startValidity }}</td>
+            <td>{{ policy.endValidity }}</td>
+            <td>{{ policy.value }}</td>
             <td>
-              <button class="button-table" routerLink="/customers/edit/">
+              <button class="button-table" routerLink="/policies/edit/">
                 <span class="material-icons"> edit </span>
               </button>
 
@@ -39,14 +41,14 @@
                 class="button-table delete"
                 [swal]="{
                   title: 'Confirmação de exclusão',
-                  text: 'Confirma a exclusão do cliente?',
+                  text: 'Confirma a exclusão da apólice?',
                   showConfirmButton: false,
                   showDenyButton: true,
                   denyButtonText: 'Excluir',
                   showCancelButton: true,
                   cancelButtonText: 'Cancelar'
                 }"
-                (deny)="deleteCustomer(2)"
+                (deny)="deletePolicy(2)"
               >
                 <span class="material-icons"> delete </span>
               </button>
