@@ -10,39 +10,6 @@
   display: flex;
 }
 
-.item {
-  display: flex;
-  flex-direction: column;
-}
-
-.item label {
-  padding: 4px 0;
-  color: #078c03;
-
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 33px;
-}
-
-.item input {
-  height: 51px;
-  background: #eeffee;
-  border: solid #078c03 0.1px;
-  box-sizing: border-box;
-  border-radius: 10px;
-  padding-left: 10px;
-  font-size: 32px;
-  font-weight: bold;
-}
-
-.item input:focus {
-  border: 0;
-  box-shadow: 0;
-  border-radius: 10px;
-}
-
 .find {
   display: flex;
   flex-direction: column;
@@ -57,7 +24,7 @@
   padding: 20px;
 
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: flex-end;
 }
 
@@ -68,8 +35,74 @@
 .status {
   padding: 50px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  color: #901818;
+  font-weight: 700;
 }
 
+.icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+
+  color: #fff;
+  font-size: 42px;
+}
+
+.icon .material-icons {
+  font-size: 60px;
+}
+
+.icon.warning {
+  background-color: #a39b24;
+}
+
+.icon.danger {
+  background-color: #901818;
+}
+
+.data {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  color: #078c03;
+
+  background: #eeffee;
+  border: solid #078c03 0.1px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding-left: 10px;
+  font-size: 32px;
+  font-weight: bold;
+  flex-grow: 1;
+}
+
+.item .label {
+  padding: 4px 0;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.item input {
+
+}
+
+.item input:focus {
+  border: 0;
+  box-shadow: 0;
+  border-radius: 10px;
+}
