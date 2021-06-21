@@ -17,7 +17,21 @@ export class CustomersListComponent implements OnInit {
   }
 
   private getCustomers() {
-    this.customersService.getCustomers().subscribe(customers => this.customers = customers);
+    this.customersService
+      .getCustomers()
+      .subscribe((customers) => (this.customers = customers));
+  }
+
+  add(customer: Customer) {
+    this.customersService
+      .createCustomer(customer)
+      .subscribe((customer) => this.customers.push(customer));
+  }
+
+  edit(customer: Customer) {
+    this.customersService
+      .editCustomer(customer)
+      .subscribe((customer) => this.customers.push(customer));
   }
 
   deleteCustomer(id: number) {

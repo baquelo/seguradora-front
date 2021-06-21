@@ -6,16 +6,24 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class CustomersService {
-  baseUrl: string =
-    'https://my-json-server.typicode.com/baquelo/seguradora-front';
+  customersUrl: string =
+    'https://my-json-server.typicode.com/baquelo/seguradora-front/customers';
 
     constructor(private http: HttpClient) {}
 
   getCustomers(): Observable<Customer[]> {
-    return this.http.get<Customer[]>(`${this.baseUrl}/customers`);
+    return this.http.get<Customer[]>(`${this.customersUrl}`);
+  }
+
+  createCustomer(customer: Customer): Observable<Customer> {
+    return this.http.post<Customer>(this.customersUrl, customer);
+  }
+
+  editCustomer(customer: Customer): Observable<any> {
+    return this.http.put(`${this.customersUrl}/${customer.id}`, customer);
   }
 
   deleteCustomer(id: number) {
-    const response = this.http.delete(`${this.baseUrl}/customers/${id}`);
+    return this.http.delete(`${this.customersUrl}/${id}`);
   }
 }

@@ -7,24 +7,24 @@ import { Policy } from './policy.model';
   providedIn: 'root',
 })
 export class PoliciesService {
-  baseUrl: string =
-    'https://my-json-server.typicode.com/baquelo/seguradora-front';
+  policiesUrl: string =
+    'https://my-json-server.typicode.com/baquelo/seguradora-front/policies';
 
   constructor(private http: HttpClient) {}
 
   getPolicies(): Observable<Policy[]> {
-    return this.http.get<Policy[]>(`${this.baseUrl}/policies`);
+    return this.http.get<Policy[]>(`${this.policiesUrl}`);
   }
 
   createPolicy(policy: Policy): Observable<Policy> {
-    return this.http.post<Policy>(`${this.baseUrl}/policies`, policy);
+    return this.http.post<Policy>(`${this.policiesUrl}`, policy);
   }
 
   editPolicy(policy: Policy) {
-    return this.http.put<Policy>(`${this.baseUrl}/policies`, policy);
+    return this.http.put<Policy>(`${this.policiesUrl}`, policy);
   }
 
   deletePolicy(policyId: Number) {
-    return this.http.delete(`${this.baseUrl}/policies/${policyId}`);
+    return this.http.delete(`${this.policiesUrl}/${policyId}`);
   }
 }
