@@ -8,13 +8,14 @@ import { Observable } from 'rxjs';
 export class CustomersService {
   baseUrl: string =
     'https://my-json-server.typicode.com/baquelo/seguradora-front';
-  constructor(private http: HttpClient) {}
+
+    constructor(private http: HttpClient) {}
 
   getCustomers(): Observable<Customer[]> {
     return this.http.get<Customer[]>(`${this.baseUrl}/customers`);
   }
 
   deleteCustomer(id: number) {
-    this.http.delete(`${this.baseUrl}/api/customers`);
+    const response = this.http.delete(`${this.baseUrl}/customers/${id}`);
   }
 }

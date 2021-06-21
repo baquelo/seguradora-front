@@ -13,10 +13,16 @@ export class PoliciesListComponent implements OnInit {
   constructor(private policiesService: PoliciesService) {}
 
   ngOnInit(): void {
-    this.policies = this.policiesService.getPolicies();
+    this.getPolicies();
   }
 
   deletePolicy(id: number) {
-    console.log(id)
+    this.policiesService.deletePolicy(id);
+  }
+
+  private getPolicies() {
+    this.policiesService
+      .getPolicies()
+      .subscribe((policies) => (this.policies = policies));
   }
 }
