@@ -1,0 +1,45 @@
+<div class="page">
+  <div class="logo">
+    <img src="assets/logo.png" alt="" />
+  </div>
+
+  <div class="card">
+    <div class="header">
+      Clientes
+      <button id="btn-create" class="button primary" [routerLink]="'/customers/create'">
+        <span class="material-icons"> add </span>
+        Cadastrar
+      </button>
+    </div>
+    <div class="body">
+      <div class="table">
+        <table>
+          <tr>
+            <th>Nome Completo</th>
+            <th>CPF</th>
+            <th>Cidade</th>
+            <th>UF</th>
+            <th>Ações</th>
+          </tr>
+          <tr *ngFor="let customer of customers">
+            <td>{{ customer.fullName }}</td>
+            <td>{{ customer.cpf }}</td>
+            <td>{{ customer.city }}</td>
+            <td>{{ customer.uf }}</td>
+            <td>
+              <button class="button-table" [routerLink]="'/customers/edit/' + customer.id">
+                <span class="material-icons"> edit </span>
+              </button>
+              <button class="button-table delete">
+                <span class="material-icons"> delete </span>
+              </button>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="actions">
+      <button class="button secondary" routerLink="/">Voltar</button>
+    </div>
+  </div>
+</div>

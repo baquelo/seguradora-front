@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CustomersComponent } from './views/customers/customers.component';
+import { CustomersCreateComponent } from './customers/customers-create/customers-create.component';
+import { CustomersListComponent } from './customers/customers-list/customers-list.component';
 import { HomeComponent } from './views/home/home.component';
 import { PageNotFoundComponent } from './views/page-not-found/page-not-found.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'customers', component: CustomersComponent },
+  { path: 'customers', component: CustomersListComponent },
+  { path: 'customers/create', component: CustomersCreateComponent },
   { path: '**', component: PageNotFoundComponent },
 ];
 
