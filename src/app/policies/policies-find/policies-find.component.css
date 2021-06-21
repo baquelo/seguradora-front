@@ -28,6 +28,11 @@
   align-items: flex-end;
 }
 
+.find .item {
+  background-color: transparent;
+  border: 0;
+}
+
 .primary {
   margin-left: 10px;
 }
@@ -95,10 +100,6 @@
   font-weight: bold;
   font-size: 24px;
   line-height: 33px;
-}
-
-.item input {
-
 }
 
 .item input:focus {

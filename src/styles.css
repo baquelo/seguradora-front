@@ -154,3 +154,21 @@ tr:hover {
   flex-direction: column;
   width: 100%;
 }
+
+input {
+  height: 51px;
+  background: #eeffee;
+  border: solid #078c03 0.1px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding-left: 10px;
+  font-size: 24px;
+  color: #078c03;
+}
+
+
+input:focus {
+  border: 0;
+  box-shadow: 0;
+  border-radius: 10px;
+}
