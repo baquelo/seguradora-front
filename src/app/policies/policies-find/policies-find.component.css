@@ -13,7 +13,6 @@
 .item {
   display: flex;
   flex-direction: column;
-  padding: 10px 0;
 }
 
 .item label {
@@ -38,9 +37,39 @@
   font-weight: bold;
 }
 
-
 .item input:focus {
   border: 0;
   box-shadow: 0;
   border-radius: 10px;
 }
+
+.find {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.find-box {
+  background: #baf5b8;
+  border: 1px solid #078c03;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.primary {
+  margin-left: 10px;
+}
+
+.status {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
