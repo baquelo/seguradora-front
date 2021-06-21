@@ -9,7 +9,7 @@ import { ButtonComponent } from './components/button/button.component';
 import { CustomersModule } from './customers/customers.module';
 import { PoliciesModule } from './policies/policies.module';
 import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
-
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,6 +20,7 @@ import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     CustomersModule,
     PoliciesModule,
     SweetAlert2Module.forRoot()

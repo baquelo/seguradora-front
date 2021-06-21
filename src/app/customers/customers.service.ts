@@ -1,119 +1,20 @@
 import { Injectable } from '@angular/core';
 import { Customer } from './customer.model';
-
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root',
 })
 export class CustomersService {
-  constructor() {}
+  baseUrl: string =
+    'https://my-json-server.typicode.com/baquelo/seguradora-front';
+  constructor(private http: HttpClient) {}
 
-  getCustomers(): Customer[] {
-    return [
-      {
-        id: 1,
-        fullName: 'Marcelo Alves de Almeida',
-        cpf: '111.222.333-44',
-        city: 'Itabira',
-        uf: 'MG',
-      },
-      {
-        id: 2,
-        fullName: 'Marcelo Alves de Almeida',
-        cpf: '111.222.333-44',
-        city: 'Itabira',
-        uf: 'MG',
-      },
-      {
-        id: 3,
-        fullName: 'Marcelo Alves de Almeida',
-        cpf: '111.222.333-44',
-        city: 'Itabira',
-        uf: 'MG',
-      },
-      {
-        id: 4,
-        fullName: 'Marcelo Alves de Almeida',
-        cpf: '111.222.333-44',
-        city: 'Itabira',
-        uf: 'MG',
-      },
-      {
-        id: 5,
-        fullName: 'Marcelo Alves de Almeida',
-        cpf: '111.222.333-44',
-        city: 'Itabira',
-        uf: 'MG',
-      },
-      {
-        id: 6,
-        fullName: 'Marcelo Alves de Almeida',
-        cpf: '111.222.333-44',
-        city: 'Itabira',
-        uf: 'MG',
-      },
-      {
-        id: 7,
-        fullName: 'Marcelo Alves de Almeida',
-        cpf: '111.222.333-44',
-        city: 'Itabira',
-        uf: 'MG',
-      },
-      {
-        id: 8,
-        fullName: 'Marcelo Alves de Almeida',
-        cpf: '111.222.333-44',
-        city: 'Itabira',
-        uf: 'MG',
-      },
-      {
-        id: 9,
-        fullName: 'Marcelo Alves de Almeida',
-        cpf: '111.222.333-44',
-        city: 'Itabira',
-        uf: 'MG',
-      },
-      {
-        id: 10,
-        fullName: 'Marcelo Alves de Almeida',
-        cpf: '111.222.333-44',
-        city: 'Itabira',
-        uf: 'MG',
-      },
-      {
-        id: 11,
-        fullName: 'Marcelo Alves de Almeida',
-        cpf: '111.222.333-44',
-        city: 'Itabira',
-        uf: 'MG',
-      },
-      {
-        id: 12,
-        fullName: 'Marcelo Alves de Almeida',
-        cpf: '111.222.333-44',
-        city: 'Itabira',
-        uf: 'MG',
-      },
-      {
-        id: 13,
-        fullName: 'Marcelo Alves de Almeida',
-        cpf: '111.222.333-44',
-        city: 'Itabira',
-        uf: 'MG',
-      },
-      {
-        id: 14,
-        fullName: 'Marcelo Alves de Almeida',
-        cpf: '111.222.333-44',
-        city: 'Itabira',
-        uf: 'MG',
-      },
-      {
-        id: 15,
-        fullName: 'Marcelo Alves de Almeida',
-        cpf: '111.222.333-44',
-        city: 'Itabira',
-        uf: 'MG',
-      },
-    ];
+  getCustomers(): Observable<Customer[]> {
+    return this.http.get<Customer[]>(`${this.baseUrl}/customers`);
+  }
+
+  deleteCustomer(id: number) {
+    this.http.delete(`${this.baseUrl}/api/customers`);
   }
 }
