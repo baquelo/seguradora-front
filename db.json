@@ -1,37 +1,167 @@
 {
   "customers": [
     {
-      "id": 5928101,
-      "category": "animal welfare",
-      "title": "Cat Adoption Day",
-      "description": "Find your new feline friend at this event.",
-      "location": "Meow Town",
-      "date": "January 28, 2022",
-      "time": "12:00",
-      "petsAllowed": true,
-      "organizer": "Kat Laydee"
+      "id": 1,
+      "fullName": "Marcelo Alves de Almeida",
+      "cpf": "111.222.333-44",
+      "city": "Itabira",
+      "uf": "MG"
     },
     {
-      "id": 4582797,
-      "category": "food",
-      "title": "Community Gardening",
-      "description": "Join us as we tend to the community edible plants.",
-      "location": "Flora City",
-      "date": "March 14, 2022",
-      "time": "10:00",
-      "petsAllowed": true,
-      "organizer": "Fern Pollin"
+      "id": 2,
+      "fullName": "Marcelo Alves de Almeida",
+      "cpf": "111.222.333-44",
+      "city": "Itabira",
+      "uf": "MG"
     },
     {
-      "id": 8419988,
-      "category": "sustainability",
-      "title": "Beach Cleanup",
-      "description": "Help pick up trash along the shore.",
-      "location": "Playa Del Carmen",
-      "date": "July 22, 2022",
-      "time": "11:00",
-      "petsAllowed": false,
-      "organizer": "Carey Wales"
+      "id": 3,
+      "fullName": "Marcelo Alves de Almeida",
+      "cpf": "111.222.333-44",
+      "city": "Itabira",
+      "uf": "MG"
+    },
+    {
+      "id": 4,
+      "fullName": "Marcelo Alves de Almeida",
+      "cpf": "111.222.333-44",
+      "city": "Itabira",
+      "uf": "MG"
+    },
+    {
+      "id": 5,
+      "fullName": "Marcelo Alves de Almeida",
+      "cpf": "111.222.333-44",
+      "city": "Itabira",
+      "uf": "MG"
+    },
+    {
+      "id": 6,
+      "fullName": "Marcelo Alves de Almeida",
+      "cpf": "111.222.333-44",
+      "city": "Itabira",
+      "uf": "MG"
+    },
+    {
+      "id": 7,
+      "fullName": "Marcelo Alves de Almeida",
+      "cpf": "111.222.333-44",
+      "city": "Itabira",
+      "uf": "MG"
+    },
+    {
+      "id": 8,
+      "fullName": "Marcelo Alves de Almeida",
+      "cpf": "111.222.333-44",
+      "city": "Itabira",
+      "uf": "MG"
+    },
+    {
+      "id": 9,
+      "fullName": "Marcelo Alves de Almeida",
+      "cpf": "111.222.333-44",
+      "city": "Itabira",
+      "uf": "MG"
+    },
+    {
+      "id": 10,
+      "fullName": "Marcelo Alves de Almeida",
+      "cpf": "111.222.333-44",
+      "city": "Itabira",
+      "uf": "MG"
+    },
+    {
+      "id": 11,
+      "fullName": "Marcelo Alves de Almeida",
+      "cpf": "111.222.333-44",
+      "city": "Itabira",
+      "uf": "MG"
+    },
+    {
+      "id": 12,
+      "fullName": "Marcelo Alves de Almeida",
+      "cpf": "111.222.333-44",
+      "city": "Itabira",
+      "uf": "MG"
+    },
+    {
+      "id": 13,
+      "fullName": "Marcelo Alves de Almeida",
+      "cpf": "111.222.333-44",
+      "city": "Itabira",
+      "uf": "MG"
+    },
+    {
+      "id": 14,
+      "fullName": "Marcelo Alves de Almeida",
+      "cpf": "111.222.333-44",
+      "city": "Itabira",
+      "uf": "MG"
+    },
+    {
+      "id": 15,
+      "fullName": "Marcelo Alves de Almeida",
+      "cpf": "111.222.333-44",
+      "city": "Itabira",
+      "uf": "MG"
+    }
+  ],
+  "policies": [
+    {
+      "id": 1,
+      "number": 10001,
+      "licensePlate": "XLZ-1100",
+      "startValidity": "2020-05-01",
+      "endValidity": "2020-05-01",
+      "value": 250.0
+    },
+    {
+      "id": 2,
+      "number": 10001,
+      "licensePlate": "XLZ-1100",
+      "startValidity": "2020-05-01",
+      "endValidity": "2020-05-01",
+      "value": 250.0
+    },
+    {
+      "id": 3,
+      "number": 10001,
+      "licensePlate": "XLZ-1100",
+      "startValidity": "2020-05-01",
+      "endValidity": "2020-05-01",
+      "value": 250.0
+    },
+    {
+      "id": 4,
+      "number": 10001,
+      "licensePlate": "XLZ-1100",
+      "startValidity": "2020-05-01",
+      "endValidity": "2020-05-01",
+      "value": 250.0
+    },
+    {
+      "id": 5,
+      "number": 10001,
+      "licensePlate": "XLZ-1100",
+      "startValidity": "2020-05-01",
+      "endValidity": "2020-05-01",
+      "value": 250.0
+    },
+    {
+      "id": 6,
+      "number": 10001,
+      "licensePlate": "XLZ-1100",
+      "startValidity": "2020-05-01",
+      "endValidity": "2020-05-01",
+      "value": 250.0
+    },
+    {
+      "id": 7,
+      "number": 10001,
+      "licensePlate": "XLZ-1100",
+      "startValidity": "2020-05-01",
+      "endValidity": "2020-05-01",
+      "value": 250.0
     }
   ]
 }
